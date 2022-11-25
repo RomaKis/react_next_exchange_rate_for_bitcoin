@@ -1,0 +1,68 @@
+$pri: #518a5b;
+$sec: #fffffe;
+$dark-pri: #33512a;
+
+.container {
+  border: 1px solid black;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+
+  display: grid;
+  place-items: center;
+  background-color: $pri;
+
+  .items {
+    width: 615px;
+    background: $sec;
+    box-shadow: 0 3px 6px rgba(black, 0.16), 0 3px 6px rgba(black, 0.23);
+    border-top: 10px solid $dark-pri;
+  }
+
+  .title {
+    padding: 5px 20px;
+    margin: 10px;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .currenciesList {
+    list-style: none;
+    padding: 10px;
+    margin: 10px;
+
+    li {
+      padding: 10px;
+      padding-right: 0px;
+      font-size: 15px;
+      border: 1px solid transparent;
+      cursor: pointer;
+
+      span {
+        width: 120px;
+        display: inline-flex;
+        justify-content: space-around;
+      }
+
+      span.description {
+        width: 190px;
+      }
+    }
+
+    li:hover {
+      align-self: center;
+      font-size: 18px;
+      color: $dark-pri;
+      font-weight: bold;
+      animation: icon 1.5s infinite forwards;
+    }
+  }
+}
+
+
+
